@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><b>FIGHT CLUB MEMBERS</b></h1>
+    <ol>
+        {% for x in mymembers %}
+        <ul>
+            <h2><b><a href="details/{{x.id}}">{{x.firstname}} {{x.lastname}}</a></b></h2>
+        </ul>
+        {% endfor 
