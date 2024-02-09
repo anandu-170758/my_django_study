@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Members Details</title>
 </head>
 <body>
-    <h1><b>FIGHT CLUB MEMBERS</b></h1>
-    <ol>
+    <p>
         {% for x in mymembers %}
-        <ul>
-            <h2><b><a href="details/{{x.id}}">{{x.firstname}} {{x.lastname}}</a></b></h2>
-        </ul>
+        <h3>{{x.firstname}} {{x.lastname}}</h3>
+        <h2>{{x.phone}}</h2>
+        <h2>{{x.datetime}}</h2>
+        <p>Back to <a href="/members">Members</a></p>
         {% endfor %}
-    </ol>
+    </p>
 </body>
 </html>
